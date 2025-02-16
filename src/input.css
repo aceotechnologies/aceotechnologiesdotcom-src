@@ -5,4 +5,46 @@
 
 * {
     scroll-behavior: smooth;
+    @apply transition ease-in-out duration-500;
+}
+
+:root {
+    --primary-color: #ff8d23;
+    --primary-color-overlay: rgba(135, 75, 20, 0.4);
+}
+
+.body-margin {
+    @apply px-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8;
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.bg-overlay {
+    background-color: var(--primary-color-overlay);
+}
+
+.primary-text {
+    color: var(--primary-color);
+}
+
+.request-quote {
+    background-color: var(--primary-color);
+    @apply mx-4 uppercase text-sm px-6 py-3 rounded-3xl font-medium tracking-widest text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500;
+}
+
+.request-quote:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.cta-btn {
+    background-color: var(--primary-color);
+    @apply inline-flex px-6 py-3 rounded-lg items-center font-light tracking-widest text-white text-base font-normal uppercase tracking-wider;
+}
+
+.cta-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
 }

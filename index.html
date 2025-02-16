@@ -2,15 +2,133 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link href="/dist/assets/index-DRmk_E9Y.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="/src/input.css">
-    <title>Vite App</title>
-  </head>
-  <body>
-    <div class="bg-black lg:bg-red-400 text-white">
-      fsonsfn
+    <title>AceoTechnologies</title>
+	  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	  <!---
+	  You may need jQuery
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  --->
+    <style>
+        /* Default background by https://www.pexels.com/@knownasovan */
+      header {
+        /* background:url('https://images.pexels.com/photos/57690/pexels-photo-57690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'); */
+        background:url('/images/header-a.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .why {
+        background:url('/images/why.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+</head>
+
+<body class="">
+
+  <!-- Nav -->
+	<nav id="nav" class="fixed inset-x-0 top-0 flex flex-row justify-between items-center z-10 text-white bg-transparent body-margin py-4">
+
+		<div class="">
+			<div class="font-extrabold tracking-widest text-xl w-16 h-16">
+        <a href="/" class="transition duration-500 hover:text-indigo-500">
+          <img src="/images/logo-outline-white.png" alt="" srcset="">
+        </a>
+      </div>
+		</div>
+
+		<!-- Nav Items Working on Tablet & Bigger Sceen -->
+		<div class="hidden md:flex flex-row justify-between items-center font-bold">
+			<a id="" href="/" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">
+        Home
+      </a>
+      <a id="" href="/about" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">
+        About Us
+      </a>
+      <a id="" href="/services" class="mx-4 text-lg  border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">
+        Services
+      </a>
+			<a href="/contact" class="mx-4 text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500">
+        Contact
+      </a>
+      <a href="/request-quote" class="request-quote">
+        Request quote
+      </a>
     </div>
+
+		<!-- Burger Nav Button on Mobile -->
+		<div data-collapse-toggle="nav-opened" id="nav-open" class="p-4 lg:hidden" type="button" aria-controls="nav-opened" aria-expanded="false" aria-hidden="true">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+			 stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu">
+				<line x1="3" y1="12" x2="21" y2="12"></line>
+				<line x1="3" y1="6" x2="21" y2="6"></line>
+				<line x1="3" y1="18" x2="21" y2="18"></line>
+			</svg>
+		</div>
+	</nav>
+
+	<!-- Opened Nav in Mobile, you can use javascript/jQuery -->
+	<div id="nav-opened" class="fixed left-0 right-0 bg-white mx-2 mt-16 rounded-br rounded-bl shadow z-10" hidden>
+		<div class="p-2 divide-y divide-gray-600 flex flex-col">
+			<a href="/" class="p-2 font-semibold hover:text-indigo-700">Home</a>
+			<a href="/about" class="p-2 font-semibold hover:text-indigo-700">About Us</a>
+			<a href="/services" class="p-2 font-semibold hover:text-indigo-700">Services</a>
+			<a href="/contact" class="p-2 font-semibold hover:text-indigo-700">Contact</a>
+			<a href="/request-quote" class="p-2 font-semibold hover:text-indigo-700">Request quote</a>
+		</div>
+  </div>
+  <!-- End nav -->
+
+  <div class="content">
+    <!-- Header -->
+    <section>
+      <header id="up" class="bg-center bg-fixed bg-no-repeat bg-cover h-screen relative">
+        <!-- Overlay Background + Center Control -->
+        <div class="h-screen bg-overlay flex items-center justify-start">
+          <div class="w-full text-left body-margin">
+            <!--  -->
+            <div class="overflow-hidden">
+              <div class="py-16">
+                <div class="flex flex-col items-start justify-between xl:flex-row">
+                  <div class="w-full max-w-xl mb-12 xl:mb-0 xl:w-7/12">
+                    <span class="block mb-6 lg:mb-8 font-bold text-white text-xl tracking-wide">We transform your ideas into reality</span>
+                    <h2 class="max-w-lg mb-6 lg:mb-12 font-sans text-4xl font-bold tracking-tight text-white sm:text-5xl sm:leading-none">
+                      The quick, brown fox <br class="hidden md:block" />
+                      jumps over a <span class="text-teal-accent-400">lazy dog</span>
+                    </h2>
+                    <p class="max-w-xl mb-4 lg:mb-12 text-base text-gray-200 md:text-lg">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudan, totam rem aperiam, eaque ipsa quae.
+                    </p>
+                    <a href="/" aria-label="" class="cta-btn flex items-center">
+                      <span>Learn more</span>
+                      <span>
+                        <svg class="inline-block w-3 ml-2" fill="currentColor" viewBox="0 0 12 12">
+                          <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+                        </svg>
+                      </span>
+                    </a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </section>
+
+    <!-- Section 1 -->
+    <section>
+      <!--  -->
+    </section>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
