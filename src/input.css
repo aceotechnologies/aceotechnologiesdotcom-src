@@ -43,7 +43,7 @@
 
 .request-quote {
     background-color: var(--primary-color);
-    @apply mx-4 uppercase text-sm px-6 py-3 rounded-3xl font-medium tracking-widest text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500;
+    @apply ml-4 uppercase text-sm px-6 py-3 rounded-3xl font-medium tracking-widest text-lg border-b-2 border-transparent hover:border-b-2 hover:border-indigo-300 transition duration-500;
 }
 
 .request-quote:hover {
@@ -74,4 +74,12 @@
 .customers {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     @apply flex flex-col justify-between border rounded bg-white;
+}
+
+.shadow-1 {
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.shadow-2 {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
