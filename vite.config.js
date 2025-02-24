@@ -13,7 +13,7 @@ export default defineConfig ({
                 about: resolve(__dirname, 'about/index.html'),
                 services: resolve(__dirname, 'services/index.html'),
                 // why_beitor: resolve(__dirname, 'why-beitor/index.html'),
-                // contact_us: resolve(__dirname, 'contact-us/index.html'),
+                contact: resolve(__dirname, 'contact/index.html'),
             },
         },
     },
