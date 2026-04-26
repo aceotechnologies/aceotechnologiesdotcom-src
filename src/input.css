@@ -83,3 +83,11 @@
 .shadow-2 {
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
+
+/* FB-MAIN LANDING PAGE STYLE */
+
+.body-margin-fb-main {
+    @apply xl:px-64 lg:px-48 md:px-32;
+}
+
+/* END FB-MAIN LANDING PAGE STYLE */
