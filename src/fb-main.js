@@ -15,7 +15,7 @@ function visitFormPage(e)
 {
     e.preventDefault();
 
-    let link = '#ikenna';
+    let link = 'https://docs.google.com/forms/d/e/1FAIpQLSfjdgscfIh1A8Lw8v6kt1bKG0r6SslzOz7Gcgcli6Kx57XKbg/viewform?usp=header';
 
     if (affID != null && affForms[affID] != undefined) {
         link = affForms[affID]
