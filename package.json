@@ -6,9 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "m": "php markup-blogs.php",
+    "markup": "php markup-blogs.php && vite build",
+    "remarkup": "php markup-blogs.php && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "glob": "^13.0.6",
     "vite": "^6.1.0"
   },
   "dependencies": {
