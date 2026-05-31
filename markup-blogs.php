@@ -21,6 +21,7 @@ class Text
     private static $instance                = null;
     public ?string $text                    = null;
     public ?string $title                   = null;
+    public ?string $description             = null;
     public ?string $headerImage             = null;
     public ?string $article                 = null;
     public ?string $implodedText            = null;
@@ -50,6 +51,7 @@ class Text
         $this->explodeText();
         $this->filterTitle();
         $this->filterHeaderImage();
+        $this->filterDescription();
         $this->setDateCreated($filename);
         $this->setDateUpdated($filename);
         $this->filterArticle();
@@ -60,7 +62,15 @@ class Text
      */
     public function filterTitle()
     {
-        $this->title = trim($this->explodedText[1], '# ');
+        $this->title = trim($this->explodedText[0], '# ');
+    }
+
+    /**
+     * @method - Gets the title from array and strips it of markdown syntax if any
+     */
+    public function filterDescription()
+    {
+        $this->description = $this->explodedText[1];
     }
 
     /**
@@ -68,7 +78,7 @@ class Text
      */
     public function filterHeaderImage()
     {
-        $this->headerImage = $this->explodedText[0];
+        $this->headerImage = $this->explodedText[2];
     }
 
     /**
@@ -76,8 +86,9 @@ class Text
      */
     public function filterArticle()
     {
-        array_shift($this->explodedText);       # Removes image link at the top
-        array_shift($this->explodedText);       # Removes title second to top
+        array_shift($this->explodedText);       # Removes title at the top
+        array_shift($this->explodedText);       # Removes description second to top
+        array_shift($this->explodedText);       # Removes image second to top
         $this->implodeText();                   # Turns array to string
         $this->article = $this->implodedText;
     }
@@ -138,7 +149,8 @@ class Text
         $this->title = null;
         $this->implodedText = null;
         $this->explodedText = null;
-        $this->image = null;
+        $this->headerImage = null;
+        $this->description = null;
         $this->createdAt = null;
         $this->updatedAt = null;
     }
@@ -204,6 +216,7 @@ class MarkupBlogs
         $this->text->compile(Path::$source.$blogPost);
 
         $title = $this->text->title;
+        $description = $this->text->description;
         $headerImage = $this->text->headerImage;
         $createdAt = $this->text->createdAt;
         $updatedAt = $this->text->updatedAt;

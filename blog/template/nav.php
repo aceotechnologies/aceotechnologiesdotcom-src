@@ -7,7 +7,7 @@
         <li><a href="/" aria-label="Our product" title="Our product" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Features</a></li>
         <li><a href="/" aria-label="Product pricing" title="Product pricing" class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400">Pricing</a></li>
       </ul> -->
-      <a href="/" aria-label="Company" title="Company" class="inline-flex items-center lg:mx-auto">
+      <a href="/codekzm" aria-label="Company" title="Company" class="inline-flex items-center lg:mx-auto">
         <!-- Logo -->
         <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">CodeKZM Blog</span>
       </a>
