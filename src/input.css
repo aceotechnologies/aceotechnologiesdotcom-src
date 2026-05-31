@@ -84,6 +84,34 @@
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
 }
 
+/* BLOG STYLINGS */
+
+.blog-primary-color {
+    @apply text-gray-900;
+}
+
+article a {
+    @apply text-gray-900;
+}
+
+.bg-blog-primary-color {
+    @apply bg-gray-900;
+}
+
+article p {
+    @apply pb-6;
+}
+
+article blockquote {
+    @apply border border-l-4 border-gray-500 pl-4 mb-6 italic rounded;
+}
+
+article h2 {
+    @apply text-2xl text-gray-800 font-semibold mb-4 mt-4;
+}
+
+/* END BLOG STYLINGS */
+
 /* FB-MAIN LANDING PAGE STYLE */
 
 .body-margin-fb-main {

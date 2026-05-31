@@ -6,9 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "m": "php markup-blogs.php",
     "markup": "php markup-blogs.php && vite build",
-    "remarkup": "php markup-blogs.php && vite build",
     "preview": "vite preview"
   },
   "devDependencies": {

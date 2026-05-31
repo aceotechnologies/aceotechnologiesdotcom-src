@@ -95,6 +95,7 @@ class Text
      */
     public function explodeText()
     {
+        $this->text = str_replace("\r\n\r\n", "\n\n", $this->text);
         $this->explodedText = explode("\n\n", $this->text);
     }
 
