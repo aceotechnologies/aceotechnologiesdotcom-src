@@ -90,6 +90,10 @@
     @apply text-gray-900;
 }
 
+.blog-jumbotron-index {
+    @apply w-full h-[50vh] overflow-hidden;
+}
+
 article a {
     @apply text-gray-900;
 }

@@ -66,7 +66,7 @@ class Text
     }
 
     /**
-     * @method - Gets the title from array and strips it of markdown syntax if any
+     * @method - Gets the description from array and strips it of markdown syntax if any
      */
     public function filterDescription()
     {
@@ -145,21 +145,26 @@ class Text
      */
     public function cleanUp()
     {
-        $this->text = null;
-        $this->title = null;
+        $this->text         = null;
+        $this->title        = null;
         $this->implodedText = null;
         $this->explodedText = null;
-        $this->headerImage = null;
-        $this->description = null;
-        $this->createdAt = null;
-        $this->updatedAt = null;
+        $this->headerImage  = null;
+        $this->description  = null;
+        $this->createdAt    = null;
+        $this->updatedAt    = null;
+        // $this->$article     = null;
     }
 
     public function __destruct()
     {
-        // $this->cleanUp();
+        $this->cleanUp();
     }
 }
+
+
+
+
 
 /**
  * Handles the markup functions with data gotten from the Text class
@@ -232,6 +237,18 @@ class MarkupBlogs
     }
 
     /**
+     * Compiles the blog index page and saves it
+     */
+    public function buildIndexPage()
+    {
+        ob_start();
+        require Path::$template.'posts.php';
+        $data = ob_get_clean();
+
+        file_put_contents(Path::$destination.'index.html', $data);
+    }
+
+    /**
      * @method Stores final (HTML) data in /codekzm directory
      * @param filename - filename for the destination file
      * @param data - data to be stored in file
@@ -301,7 +318,7 @@ class MarkupBlogs
 
         foreach ($files as $file) {
             $exceptions = [
-                '.', '..', 'template', 'lmt', 'lmat', 'index.php'
+                '.', '..', 'template', 'lmt', 'lmat', 'index.php', 'posts.json'
             ];
 
             if (in_array($file, $exceptions)) {
@@ -325,6 +342,7 @@ class MarkupBlogs
         } else {
             $this->markupSingle();
         }
+        $this->buildIndexPage();
     }
 }
 
