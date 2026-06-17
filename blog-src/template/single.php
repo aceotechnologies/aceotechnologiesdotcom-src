@@ -43,7 +43,7 @@
   $post2          = rand(1, $morePostsCount);
   $post3          = rand(1, $morePostsCount);
   $moreAuthor     = 'Code Kazeem';
-  $moreProfilePic = '/images/codekzm/profile.jpg';
+  $moreProfilePic = '/images/blog/profile.jpg';
 ?>
 
       <div id="more_articles">

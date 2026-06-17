@@ -17,12 +17,12 @@ const pages = {
     wmchub_terms: resolve(__dirname, 'wmc-hub/legal/terms/index.html'),
     wmchub_legal_resolve: resolve(__dirname, 'wmc-hub/legal/index.html'),
 };
-const codekzm = {...globSync('codekzm/*.html')};
+const blog = {...globSync('blog/*.html')};
 
 export default defineConfig ({
     build: {
         rollupOptions: {
-            input: {...pages, ...codekzm },
+            input: {...pages, ...blog },
         },
     },
     plugins: [

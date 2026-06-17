@@ -8,9 +8,9 @@ require_once 'ParseDown/ParsedownExtra.php';
  */
 class Path
 {
-    public static string $source      = 'blog/';            # source folder
-    public static string $destination = 'codekzm/';         # destination folder
-    public static string $template    = 'blog/template/';   # template folder
+    public static string $source      = 'blog-src/';            # source folder
+    public static string $destination = 'blog/';         # destination folder
+    public static string $template    = 'blog-src/template/';   # template folder
 }
 
 /**
@@ -261,7 +261,7 @@ class MarkupBlogs
     }
 
     /**
-     * @method Stores final (HTML) data in /codekzm directory
+     * @method Stores final (HTML) data in /blog directory
      * @param filename - filename for the destination file
      * @param data - data to be stored in file
      */

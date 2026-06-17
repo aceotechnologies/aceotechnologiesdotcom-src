@@ -5,7 +5,7 @@
 
     <div class="px-4 pb-6 lg:px-0">
         <h1 class="text-4xl font-semibold text-gray-800 leading-tight">
-        <?= $title ?? 'CodeKZM Blog' ?>
+        <?= $title ?? 'Blog' ?>
         </h1>
         <!-- <a 
         href="#"

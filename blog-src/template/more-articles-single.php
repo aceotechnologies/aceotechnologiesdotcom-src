@@ -5,7 +5,7 @@
     <div class="p-8 bg-white border rounded shadow-sm">
       <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
       </p>
-      <a href="/codekzm/<?= $morePosts[$post1]['filename'] ?>" aria-label="Article" title="<?= $morePosts[$post1]['title'] ?>" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400"><?= $morePosts[$post1]['title'] ?></a>
+      <a href="/blog/<?= $morePosts[$post1]['filename'] ?>" aria-label="Article" title="<?= $morePosts[$post1]['title'] ?>" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400"><?= $morePosts[$post1]['title'] ?></a>
       <p class="mb-5 text-gray-700">
         <?= $morePosts[$post1]['description'] ?>
       </p>
@@ -25,7 +25,7 @@
     <div class="p-8 bg-white border rounded shadow-sm">
       <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
       </p>
-      <a href="/codekzm/<?= $morePosts[$post2]['filename'] ?>" aria-label="Article" title="<?= $morePosts[$post2]['title'] ?>" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400"><?= $morePosts[$post2]['title'] ?></a>
+      <a href="/blog/<?= $morePosts[$post2]['filename'] ?>" aria-label="Article" title="<?= $morePosts[$post2]['title'] ?>" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400"><?= $morePosts[$post2]['title'] ?></a>
       <p class="mb-5 text-gray-700">
         <?= $morePosts[$post2]['description'] ?>
       </p>
@@ -45,7 +45,7 @@
     <div class="p-8 bg-white border rounded shadow-sm">
       <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
       </p>
-      <a href="/codekzm/<?= $morePosts[$post3]['filename'] ?>" aria-label="Article" title="<?= $morePosts[$post3]['title'] ?>" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400"><?= $morePosts[$post3]['title'] ?></a>
+      <a href="/blog/<?= $morePosts[$post3]['filename'] ?>" aria-label="Article" title="<?= $morePosts[$post3]['title'] ?>" class="inline-block mb-3 text-2xl font-bold leading-5 text-black transition-colors duration-200 hover:text-deep-purple-accent-400"><?= $morePosts[$post3]['title'] ?></a>
       <p class="mb-5 text-gray-700">
         <?= $morePosts[$post3]['description'] ?>
       </p>

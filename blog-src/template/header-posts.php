@@ -46,7 +46,7 @@ if (!empty($posts[$postCount - 1])) {
     <!-- <div class="relative" style="height:auto;min-height:200px"></div> -->
 </div>
 <div class="mt-10 border-t border-neutral-300 pt-4 font-sans">
-    <a href="/codekzm/<?= $posts[$postCount - 1]['filename'] ?>" class="text-[11px] tracking-widest text-neutral-400 uppercase">Continue reading →</a>
+    <a href="/blog/<?= $posts[$postCount - 1]['filename'] ?>" class="text-[11px] tracking-widest text-neutral-400 uppercase">Continue reading →</a>
 </div>
 <hr class="w-full h-1 bg-black mt-6">
 <?php } ?>
@@ -63,7 +63,7 @@ if (!empty($posts[$postCount - 1])) {
         20 Nov 2020
       </p> -->
       <div class="mb-3">
-        <a href="/codekzm/<?= $posts[$postCount - 2]['filename'] ?>" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400">
+        <a href="/blog/<?= $posts[$postCount - 2]['filename'] ?>" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400">
           <p class="font-sans text-xl font-extrabold leading-none tracking-tight lg:text-4xl xl:text-5xl">
             <?= $posts[$postCount - 2]['title'] ?>
           </p>
@@ -73,11 +73,11 @@ if (!empty($posts[$postCount - 1])) {
       <?= $posts[$postCount - 2]['description'] ?>
       </p>
       <div class="flex items-center">
-        <a href="/images/codekzm/profile.jpg" aria-label="Author" class="mr-3">
-          <img alt="avatar" src="/images/codekzm/profile.jpg" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+        <a href="/images/blog/profile.jpg" aria-label="Author" class="mr-3">
+          <img alt="avatar" src="/images/blog/profile.jpg" class="object-cover w-10 h-10 rounded-full shadow-sm" />
         </a>
         <div>
-          <a href="/images/codekzm/profile.jpg" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Code Kazeem</a>
+          <a href="/images/blog/profile.jpg" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Code Kazeem</a>
           <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
         </div>
       </div>
@@ -91,7 +91,7 @@ if (!empty($posts[$postCount - 1])) {
           14 Jul 2020
         </p> -->
         <div class="mb-3">
-          <a href="/codekzm/<?= $posts[$postCount - 3]['filename'] ?>" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400">
+          <a href="/blog/<?= $posts[$postCount - 3]['filename'] ?>" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400">
             <p class="font-sans text-xl font-extrabold leading-none tracking-tight lg:text-2xl">
                 <?= $posts[$postCount - 3]['title'] ?>
             </p>
@@ -101,11 +101,11 @@ if (!empty($posts[$postCount - 1])) {
           <?= $posts[$postCount - 3]['description'] ?>
         </p>
         <div class="flex items-center">
-          <a href="/images/codekzm/profile.jpg" aria-label="Author" class="mr-3">
-            <img alt="avatar" src="/images/codekzm/profile.jpg" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+          <a href="/images/blog/profile.jpg" aria-label="Author" class="mr-3">
+            <img alt="avatar" src="/images/blog/profile.jpg" class="object-cover w-10 h-10 rounded-full shadow-sm" />
           </a>
           <div>
-            <a href="/images/codekzm/profile.jpg" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Code Kazeem</a>
+            <a href="/images/blog/profile.jpg" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Code Kazeem</a>
             <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
           </div>
         </div>
@@ -118,7 +118,7 @@ if (!empty($posts[$postCount - 1])) {
           18 Mar 2020
         </p> -->
         <div class="mb-3">
-          <a href="/codekzm/<?= $posts[$postCount - 4]['filename'] ?>" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400">
+          <a href="/blog/<?= $posts[$postCount - 4]['filename'] ?>" aria-label="Article" class="inline-block text-black transition-colors duration-200 hover:text-deep-purple-accent-400">
             <p class="font-sans text-xl font-extrabold leading-none tracking-tight lg:text-2xl">
               <?= $posts[$postCount - 4]['title'] ?>
             </p>
@@ -128,11 +128,11 @@ if (!empty($posts[$postCount - 1])) {
           <?= $posts[$postCount - 4]['description'] ?>
         </p>
         <div class="flex items-center">
-          <a href="/images/codekzm/profile.jpg" aria-label="Author" class="mr-3">
-            <img alt="avatar" src="/images/codekzm/profile.jpg" class="object-cover w-10 h-10 rounded-full shadow-sm" />
+          <a href="/images/blog/profile.jpg" aria-label="Author" class="mr-3">
+            <img alt="avatar" src="/images/blog/profile.jpg" class="object-cover w-10 h-10 rounded-full shadow-sm" />
           </a>
           <div>
-            <a href="/images/codekzm/profile.jpg" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Code Kazeem</a>
+            <a href="/images/blog/profile.jpg" aria-label="Author" class="font-semibold text-gray-800 transition-colors duration-200 hover:text-deep-purple-accent-400">Code Kazeem</a>
             <p class="text-sm font-medium leading-4 text-gray-600">Author</p>
           </div>
         </div>

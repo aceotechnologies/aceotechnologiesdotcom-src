@@ -11,7 +11,7 @@ if (!empty($posts[$postCount - 8])) { ?>
 
     <div class="flex flex-1 flex-col justify-between">
     <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-        <a href="/codekzm/<?= $posts[$postCount - 8]['filename'] ?>">
+        <a href="/blog/<?= $posts[$postCount - 8]['filename'] ?>">
         <span class="font-bold text-gray-900 uppercase">
             <?= $posts[$postCount - 8]['title'] ?>
         </span>
@@ -23,7 +23,7 @@ if (!empty($posts[$postCount - 8])) { ?>
     </div>
 
     <div class="sm:flex sm:items-end sm:justify-end">
-        <a href="/codekzm/<?= $posts[$postCount - 8]['filename'] ?>" class="block bg-gray-900 px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-gray-800">
+        <a href="/blog/<?= $posts[$postCount - 8]['filename'] ?>" class="block bg-gray-900 px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-gray-800">
         Read Blog
         </a>
     </div>
@@ -39,7 +39,7 @@ if (!empty($posts[$postCount - 8])) { ?>
 
     <div class="flex flex-1 flex-col justify-between">
     <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
-        <a href="/codekzm/<?= $posts[$postCount - 9]['filename'] ?>">
+        <a href="/blog/<?= $posts[$postCount - 9]['filename'] ?>">
         <span class="font-bold text-gray-900 uppercase">
             <?= $posts[$postCount - 9]['title'] ?>
         </span>
@@ -51,7 +51,7 @@ if (!empty($posts[$postCount - 8])) { ?>
     </div>
 
     <div class="sm:flex sm:items-end sm:justify-end">
-        <a href="/codekzm/<?= $posts[$postCount - 9]['filename'] ?>" class="block bg-gray-900 px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-gray-800">
+        <a href="/blog/<?= $posts[$postCount - 9]['filename'] ?>" class="block bg-gray-900 px-5 py-3 text-center text-xs font-bold text-white uppercase transition hover:bg-gray-800">
         Read Blog
         </a>
     </div>

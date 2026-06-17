@@ -9,8 +9,8 @@
     <meta name="description" content="Code Kazeem's musings">
 
     <meta property="og:title" content="Code Kazeem's Blog">
-    <meta property="og:url" content="https://aceotechnologies.com/codekzm">
-    <meta property="og:image" content="https://aceotechnologies.com/codekzm/images/profile.jpg">
+    <meta property="og:url" content="https://aceotechnologies.com/blog">
+    <meta property="og:image" content="https://aceotechnologies.com/blog/images/profile.jpg">
     <meta property="og:image:width" content="512">
     <meta property="og:image:height" content="512">
     <meta property="og:type" content="blog">
