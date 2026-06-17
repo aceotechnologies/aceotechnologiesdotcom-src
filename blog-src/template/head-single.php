@@ -8,7 +8,7 @@
 
 <meta property="og:title" content="<?= $title ?? 'Blog' ?>">
 <meta property="og:url" content="<?= $url ?>">
-<meta property="og:image" content="<?= 'https://aceotechnologies.com/images/blog'.$headerImage ?>">
+<meta property="og:image" content="<?= 'https://aceotechnologies.com'.$headerImage ?>">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:type" content="article">

@@ -8,7 +8,7 @@
     <meta name="author" content="Code Kazeem">
     <meta name="description" content="Code Kazeem's musings">
 
-    <meta property="og:title" content="Code Kazeem's Blog">
+    <meta property="og:title" content="Aceotechnologies Blog">
     <meta property="og:url" content="https://aceotechnologies.com/blog">
     <meta property="og:image" content="https://aceotechnologies.com/blog/images/profile.jpg">
     <meta property="og:image:width" content="512">
