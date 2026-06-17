@@ -41,7 +41,7 @@ fbq('track', 'PageView');
 
 <body>
 
-<?php require_once 'nav.php'; ?>    
+<?php require 'nav.php'; ?>    
 
 <div class="blog-jumbotron-index">
 

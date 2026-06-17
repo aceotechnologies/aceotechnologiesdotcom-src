@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Blog markdowns markups
+blog/*.md
+codekzm

@@ -16,6 +16,10 @@
     </div>
 
     <img src="<?= $headerImage ?>" class="w-full object-cover lg:rounded" style="height: 28em;"/>
+
+    <div class="text-gray-400 italic mt-4">
+        <?= $readTime . " minute read." ?>
+    </div>
 </div>
 
 </header>

@@ -28,6 +28,7 @@ class Text
     public ?array $explodedText             = null;
     public ?string $createdAt               = null;
     public ?string $updatedAt               = null;
+    public ?int $readTime                   = null;
 
     private function __construct(){}
     private function __clone(){}
@@ -55,6 +56,7 @@ class Text
         $this->setDateCreated($filename);
         $this->setDateUpdated($filename);
         $this->filterArticle();
+        $this->setReadTime();
     }
 
     /**
@@ -91,6 +93,14 @@ class Text
         array_shift($this->explodedText);       # Removes image second to top
         $this->implodeText();                   # Turns array to string
         $this->article = $this->implodedText;
+    }
+
+    /**
+     * @method - Calculates and sets the read time of the article
+     */
+    public function setReadTime()
+    {
+        $this->readTime = (int) str_word_count($this->article) / 200;
     }
 
     /**
@@ -153,6 +163,7 @@ class Text
         $this->description  = null;
         $this->createdAt    = null;
         $this->updatedAt    = null;
+        $this->readTime     = null;
         // $this->$article     = null;
     }
 
@@ -220,11 +231,12 @@ class MarkupBlogs
         $this->text = Text::getInstance();
         $this->text->compile(Path::$source.$blogPost);
 
-        $title = $this->text->title;
-        $description = $this->text->description;
-        $headerImage = $this->text->headerImage;
-        $createdAt = $this->text->createdAt;
-        $updatedAt = $this->text->updatedAt;
+        $title          = $this->text->title;
+        $description    = $this->text->description;
+        $headerImage    = $this->text->headerImage;
+        $createdAt      = $this->text->createdAt;
+        $updatedAt      = $this->text->updatedAt;
+        $readTime       = $this->text->readTime;
         
         $this->extra = new ParsedownExtra();
         $article = $this->extra->text($this->text->article);

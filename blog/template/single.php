@@ -10,7 +10,9 @@
 
 <body>
 
-<?php require 'nav.php'; ?>
+<div id="top">
+  <?php require 'nav.php'; ?>
+</div>
 
 <div class="max-w-screen-lg mx-auto">
     
@@ -35,12 +37,12 @@
       </div>
 
 <?php
-  $morePosts = json_decode(file_get_contents(Path::$source.'posts.json'), true);
+  $morePosts      = json_decode(file_get_contents(Path::$source.'posts.json'), true);
   $morePostsCount = count($morePosts);
-  $post1 = rand(1, $morePostsCount);
-  $post2 = rand(1, $morePostsCount);
-  $post3 = rand(1, $morePostsCount);
-  $moreAuthor = 'Code Kazeem';
+  $post1          = rand(1, $morePostsCount);
+  $post2          = rand(1, $morePostsCount);
+  $post3          = rand(1, $morePostsCount);
+  $moreAuthor     = 'Code Kazeem';
   $moreProfilePic = '/images/codekzm/profile.jpg';
 ?>
 
@@ -57,6 +59,15 @@
 
     </footer>
   </div>
+
+  <!-- Back to top -->
+  <a href="#top">
+  <div class="blog-to-top">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+    </svg>
+  </div>
+  </a>
 
   <script type="module" src="/src/main.js"></script>
 </body>
