@@ -14,23 +14,32 @@
   <?php require 'nav.php'; ?>
 </div>
 
-<div class="max-w-screen-lg mx-auto">
+<div class="max-w-screen-xl mx-auto">
     
     <main class="mt-10">
 
       <?php require 'header-single.php'; ?>
 
-      <div class="flex flex-col lg:flex-row lg:space-x-12">
+      <div class="flex flex-col lg:flex-row lg:space-x-12 gap-4">
 
-        <article class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+        <!-- Left Sidebar -->
+        <div class="order-2 lg:order-1 w-full lg:w-1/4 m-auto mt-12 lg:mt-12 max-w-screen-sm">
+
+          <?php require 'left-sidebar.html'; ?>
+
+        </div>
+
+        <!-- Main Article -->
+        <article class="order-1 lg:order-2 px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
           
             <?= $article ?? 'No article'; ?>
 
         </article>
 
-        <div class="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
+        <!-- Right Sidebar -->
+        <div class="order-3 lg:order-3 w-full lg:w-1/4 m-auto mt-12 lg:mt-12 max-w-screen-sm">
 
-          <?php require 'author.html'; ?>
+          <?php require 'right-sidebar.html'; ?>
 
         </div>
 
