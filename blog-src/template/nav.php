@@ -20,7 +20,8 @@
             href="https://docs.google.com/forms/d/e/1FAIpQLSfjdgscfIh1A8Lw8v6kt1bKG0r6SslzOz7Gcgcli6Kx57XKbg/viewform?usp=header"
             class="h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
             aria-label="Sign up"
-            title="Sign up"
+            title="Enroll now"
+            target="_blank"
           >
             Enroll Now
           </a>
