@@ -17,8 +17,9 @@
 
     <img src="<?= $headerImage ?>" class="w-full object-cover lg:rounded" style="height: 28em;"/>
 
-    <div class="text-gray-400 italic mt-4">
-        <?= $readTime . " minute read." ?>
+    <div class="flex gap-4 text-gray-400 italic mt-4">
+        <span>Last updated on <?= date('l, jS F Y', $updatedAt) ?>.</span>
+        <span><?= $readTime ?> minute read.</span>
     </div>
 </div>
 

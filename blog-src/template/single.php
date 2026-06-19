@@ -78,6 +78,9 @@
   </div>
   </a>
 
-  <script type="module" src="/src/main.js"></script>
+  <script type="module" src="/src/article-content-ad.js"></script>
+  <!-- <script type="module" src="/src/main.js"></script> -->
+
+
 </body>
 </html>
