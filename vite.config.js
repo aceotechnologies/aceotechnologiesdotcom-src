@@ -13,6 +13,7 @@ const pages = {
     contact: resolve(__dirname, 'contact/index.html'),
 
     wmchub_lp_fb_main: resolve(__dirname, 'wmc-hub/landing-pages/fb-main.html'),
+    wmchub_lp_ad_cta: resolve(__dirname, 'wmc-hub/landing-pages/ad-cta.html'),
     wmchub_lp_resolve: resolve(__dirname, 'wmc-hub/landing-pages/index.html'),
     wmchub_terms: resolve(__dirname, 'wmc-hub/legal/terms/index.html'),
     wmchub_legal_resolve: resolve(__dirname, 'wmc-hub/legal/index.html'),
